@@ -1,0 +1,141 @@
+{
+    "recipes": [
+      {
+        "title": "Litti Chokha",
+        "cuisine": "Bihari",
+        "prep_time_minutes": 20,
+        "cook_time_minutes": 30,
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "Wheat flour",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "Sattu (roasted gram flour)",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "Mustard oil",
+            "quantity": "3 tablespoons"
+          },
+          {
+            "name": "Garlic",
+            "quantity": "5 cloves, finely chopped"
+          },
+          {
+            "name": "Green chilies",
+            "quantity": "2, finely chopped"
+          },
+          {
+            "name": "Salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "Lemon juice",
+            "quantity": "2 tablespoons"
+          }
+        ],
+        "instructions": [
+          "In a bowl, mix wheat flour with water to form a soft dough.",
+          "In a separate bowl, mix sattu, mustard oil, garlic, green chilies, salt, and lemon juice for the stuffing.",
+          "Divide the dough into equal portions, fill each with the stuffing, and seal properly.",
+          "Bake or roast the stuffed dough balls (litti) until golden brown.",
+          "For chokha, mash boiled potatoes, roasted eggplants, and tomatoes with spices, mustard oil, and salt.",
+          "Serve litti hot with chokha."
+        ],
+        "tags": ["vegetarian", "traditional", "Indian"]
+      },
+      {
+        "title": "Paneer Butter Masala",
+        "cuisine": "Punjabi",
+        "prep_time_minutes": 15,
+        "cook_time_minutes": 25,
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "Paneer",
+            "quantity": "250 grams"
+          },
+          {
+            "name": "Butter",
+            "quantity": "3 tablespoons"
+          },
+          {
+            "name": "Tomato puree",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "Cashew paste",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "Cream",
+            "quantity": "3 tablespoons"
+          },
+          {
+            "name": "Garam masala",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "Salt",
+            "quantity": "to taste"
+          }
+        ],
+        "instructions": [
+          "Heat butter in a pan and sauté the tomato puree until oil separates.",
+          "Add cashew paste and cook for 2-3 minutes.",
+          "Mix in spices and paneer cubes. Cook for 5 minutes.",
+          "Add cream and simmer for another 2 minutes.",
+          "Serve hot with naan or rice."
+        ],
+        "tags": ["vegetarian", "main course", "Indian"]
+      },
+      {
+        "title": "Vegetable Pulao",
+        "cuisine": "Indian",
+        "prep_time_minutes": 10,
+        "cook_time_minutes": 20,
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "Basmati rice",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "Mixed vegetables",
+            "quantity": "1.5 cups (carrots, peas, beans)"
+          },
+          {
+            "name": "Cumin seeds",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "Bay leaf",
+            "quantity": "1"
+          },
+          {
+            "name": "Cloves",
+            "quantity": "3"
+          },
+          {
+            "name": "Salt",
+            "quantity": "to taste"
+          },
+          {
+            "name": "Water",
+            "quantity": "4 cups"
+          }
+        ],
+        "instructions": [
+          "Wash and soak the rice for 20 minutes.",
+          "Heat oil in a pan, add spices (cumin, bay leaf, cloves), and sauté.",
+          "Add mixed vegetables and sauté for 5 minutes.",
+          "Add rice and water, season with salt, and cook until rice is tender.",
+          "Fluff the pulao with a fork and serve hot."
+        ],
+        "tags": ["vegetarian", "rice", "Indian"]
+      }
+    ]
+  }
+  

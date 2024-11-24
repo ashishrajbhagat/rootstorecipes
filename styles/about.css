@@ -1,0 +1,142 @@
+.about-hero {
+    background: url('https://placehold.co/1920x600') no-repeat center center/cover;
+    position: relative;
+    height: 400px;
+}
+
+.about-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.about-hero p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-section img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.values-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin: 60px auto;
+}
+
+.values-section .value-box {
+    text-align: center;
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.values-section .value-box:hover {
+    transform: translateY(-10px);
+}
+
+.values-section .value-box i {
+    font-size: 48px;
+    color: #1e88c1;
+    margin-bottom: 20px;
+}
+
+.values-section .value-box h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.values-section .value-box p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.team-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team-section .team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team-section .team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 30px;
+    transition: transform 0.3s;
+}
+
+.team-section .team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-section .team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-section .team-member h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.team-section .team-member p {
+    font-size: 16px;
+    color: #7f8c8d;
+}

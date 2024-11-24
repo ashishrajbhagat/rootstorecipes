@@ -1,0 +1,502 @@
+/* ---------------------------- SEARCH -------------------------------------- */
+
+.hero-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-image img {
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(2, 42, 75, 0.2);
+    height: auto;
+    max-width: 100%;
+}
+
+.search-container {
+    align-items: center;
+    background: linear-gradient(145deg, #0077b6, #90e0ef);
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container:hover {
+    transform: translate(-50%, -50%) scale(1.03);
+}
+
+.search-container .radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.search-container .radio-container label {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.search-container .radio-container label:first-of-type {
+    margin-right: 10px;
+}
+
+.search-container .search-category-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-container .search-category, .search-container .search-options {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.search-container .search-options {
+    cursor: not-allowed;
+}
+
+.search-container .search-input {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.search-container .search-category:focus, .search-container .search-options:focus, .hero-image .search-input:focus {
+    background-color: #e0f0ff;
+    border-color: #007bff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.search-container .search-button {
+    background-color: #023e8a;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: not-allowed;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.search-container .reset-button {
+    border: none;
+    background-color: #023e8a;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .search-container .search-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .search-container .search-container {
+        padding: 30px;
+        max-width: 350px;
+    }
+
+    .search-container .radio-container {
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container .search-container {
+        border-radius: 20px;
+        padding: 20px 15px;
+        max-width: 280px;
+    }
+
+    .search-container .search-category, .search-container .search-options, .hero-image .search-input, .hero-image .search-button, .hero-image .reset-button {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .search-container .radio-container label {
+        font-size: 16px;
+    }
+
+    .search-container .radio-container label:first-of-type {
+        margin-right: 0;
+    }
+
+    .search-container .reset-button {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container .search-container {
+        border-radius: 10px;
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .search-container .search-category,
+    .search-container .search-options,
+    .search-container .search-input,
+    .search-container .search-button,
+    .search-container .reset-button {
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding: 5px;
+        width: 90%;
+    }
+
+    .search-container .radio-container label {
+        font-size: 14px;
+    }
+
+    .search-container .reset-button {
+        margin-bottom: 0;
+    }
+}
+
+/* ----------------------------------------- Recipe of the Day ----------------------------------------- */
+
+.recipe-of-the-day {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-of-the-day .recipe-day-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.recipe-of-the-day .recipe-day-image-wrapper {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.recipe-of-the-day .recipe-day-large-image {
+    flex: 1;
+}
+
+.recipe-of-the-day .recipe-day-large-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-of-the-day .recipe-day-small-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+}
+
+.recipe-of-the-day .recipe-day-small-images img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-of-the-day .recipe-day-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-of-the-day .recipe-day-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-of-the-day .recipe-day-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.recipe-of-the-day .recipe-day-info {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.recipe-of-the-day .recipe-day-info li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.recipe-of-the-day .btn-primary {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.recipe-of-the-day .btn-primary:hover {
+    background-color: #023e8a;
+}
+
+@media (max-width: 1024px) {
+    .recipe-of-the-day .recipe-day-large-image img {
+        height: 250px;
+    }
+
+    .recipe-of-the-day .recipe-day-small-images img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-of-the-day .recipe-day-content-wrapper {
+        flex-direction: column;
+    }
+
+    .recipe-of-the-day .recipe-day-image-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .recipe-of-the-day .recipe-day-large-image img {
+        height: 200px;
+    }
+
+    .recipe-of-the-day .recipe-day-small-images {
+        flex-direction: row;
+    }
+
+    .recipe-of-the-day .recipe-day-small-images img {
+        height: 100px;
+    }
+
+    .recipe-of-the-day .recipe-day-title {
+        font-size: 1.6rem;
+    }
+
+    .recipe-of-the-day .recipe-day-description {
+        font-size: 1rem;
+    }
+}
+
+.popular-recipes, .healthy-recipes, .blog-carousel, .testimonials {
+    margin: 30px 0;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    transition: scroll-left 0.5s ease;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel .carousel-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel .carousel-card {
+    flex: 0 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel .carousel-card:hover {
+    transform: scale(1.05);
+}
+
+.carousel .carousel-card img {
+    /* max-height: 150px; */
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.carousel .carousel-card img.testimonial-img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.carousel .carousel-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.carousel .carousel-content h3.user-name {
+    font-weight: bold;
+    color: #0864a7;
+}
+
+.carousel .carousel-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.carousel .carousel-content p.review {
+    line-height: 1.6;
+}
+
+.carousel .carousel-content a.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.carousel .carousel-content a.read-more:hover {
+    background-color: #023e8a;
+}
+
+/* --------------------------------------------- Newsletter Section -------------------------------------- */
+
+.newsletter {
+    background-color: #0077b6;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #90e0ef;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #023e8a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

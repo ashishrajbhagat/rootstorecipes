@@ -1,0 +1,262 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Verdana', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, select, button, input, label, ul, li {
+    font-family: 'Josefin Sans', 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    margin: 40px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #0864a7;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background-color: #023e8a;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .about-section, .values-section, .team-section .team-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .team-section .team-member {
+        width: 100%;
+    }
+}
+
+/* ------------------------ HEADER ---------------------------------------- */
+
+header {
+    align-items: center;
+    background-color: #0864a7;
+    box-shadow: 0 4px 8px rgba(9, 96, 140, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav .nav-items {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-items li {
+    margin-left: 20px;
+}
+
+.nav-items li a {
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+
+.nav-items li a.active, .nav-items li a:hover {
+    background-color: #0b5c82;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #0864a7;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+        z-index: 1;
+    }
+
+    .nav-items {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-items li {
+        margin: 10px 20px;
+    }
+
+    .nav-items li a {
+        font-size: 16px;
+    }
+}
+
+/* ---------------------------------- FOOTER ------------------------------------------------------ */
+
+.footer {
+    background-color: #023e8a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #90e0ef;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #90e0ef;
+}
+
+.footer-section .contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section .contact-info p i {
+    margin-right: 10px;
+}
+
+.footer-section.social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social a:hover {
+    color: #90e0ef;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #0077b6;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-section p, .footer-section ul, .footer-section a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .footer-section.contact-info p {
+        justify-content: flex-start;
+    }
+}
