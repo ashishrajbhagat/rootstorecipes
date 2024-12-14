@@ -14,78 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    /** Search Form - index.html */    
-    const searchCategoryContainer = document.querySelector('.search-category-container');
-    const searchTypeRadios = document.querySelectorAll('input[name="searchType"]');
-    const searchOptions = document.getElementById("searchOptions");
-    const searchInput = document.getElementById("searchInput");
-    const searchButton = document.getElementById("searchButton");
-    const resetButton = document.getElementById("resetButton");
-
-    searchTypeRadios.forEach(radio => {
-        radio.addEventListener('change', function () {
-            if (this.value === 'category') {
-                searchCategoryContainer.style.display = 'flex';
-                searchInput.style.display = 'none';
-            } else if (this.value === 'text') {
-                searchCategoryContainer.style.display = 'none';
-                searchInput.style.display = 'block';
-            }
-        });
-    });
-
-    function toggleSearchButton() {
-        const isInputFilled = searchInput.value.trim() !== "";
-        const isOptionSelected = searchOptions.value !== "";
-        searchButton.disabled = !(isInputFilled || isOptionSelected);
-        if (!searchButton.disabled) {
-            searchButton.style.cursor = 'pointer';
-        }
-    }
-
-    searchInput.addEventListener("input", toggleSearchButton);
-
-    document.getElementById('searchCategory').addEventListener('change', function() {
-
-        searchOptions.innerHTML = '<option value="" disabled selected>Select an Option</option>';
-        searchInput.value = "";
-        searchButton.disabled = true;
-
-        const category = this.value;
-
-        let options = [];
-        if (category === 'difficulty') {
-            options = ['Easy', 'Intermediate', 'Advanced'];
-        } else if (category === 'time') {
-            options = ['Under 15 minutes', '15-30 minutes', '30-60 minutes', 'Over 1 hour'];
-        } else if (category === 'diet') {
-            options = ['Vegan', 'Vegetarian', 'Non-Vegetarian'];
-        } else if (category === 'occasion') {
-            options = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Party'];
-        } else if (category === 'season') {
-            options = ['Spring', 'Summer', 'Autumn', 'Winter'];
-        }
-
-        options.forEach(function(option) {
-            const newOption = document.createElement('option');
-            newOption.value = option.toLowerCase().replace(/\s+/g, '_');
-            newOption.textContent = option;
-            searchOptions.appendChild(newOption);
-            searchOptions.disabled = false;
-            searchOptions.style.cursor = 'pointer';
-        });
-    });
-
-    searchOptions.addEventListener("change", toggleSearchButton);
-
-    resetButton.addEventListener("click", function() {
-        searchCategory.selectedIndex = 0;
-        searchOptions.innerHTML = '<option value="" disabled selected>Select an Option</option>';
-        searchOptions.disabled = true;
-        searchInput.value = "";
-        searchButton.disabled = true;
-    });
-
     /** Carousels */
     setupCarousel('#popularCarousel'); /** Popular Recipes */
 
@@ -101,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
 /** Carousel */
 function setupCarousel(carouselSelector) {
     const carousel = document.querySelector(carouselSelector);
-    console.log(carousel);
     if (!carousel) return;
 
     let isDown = false;

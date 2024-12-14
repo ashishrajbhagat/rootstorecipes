@@ -40,7 +40,7 @@
     background: linear-gradient(145deg, #0077b6, #90e0ef);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
 }
@@ -86,6 +86,10 @@
     cursor: not-allowed;
 }
 
+.search-container input[type="text"] {
+    margin-bottom: 20px;
+}
+
 .search-button, .reset-button {
     background-color: #023e8a;
     color: white;
@@ -98,12 +102,12 @@
 }
 
 .search-image {
-    flex: 1;
-    background-image: url('https://placehold.co/400x300');
+    flex: 2;
+    background-image: url('https://placehold.co/600x300');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    height: 400px;
+    height: 300px;
 }
 
 /* Result Section */
@@ -116,11 +120,12 @@
 .results-title {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    display: none;
 }
 
 .results-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 

@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
         </div>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -34,8 +34,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </section>
     
-        <section class="search-section">
-            <div class="search-container">
+        <section class="search-section">    
+            <div class="search-image"></div>
+
+            <form class="search-container" method="GET" action="search.html">
                 <div class="radio-container">
                     <label>
                         <input type="radio" name="searchType" value="category" checked> Search by Category
@@ -44,52 +46,35 @@
                         <input type="radio" name="searchType" value="text"> Search by Text
                     </label>
                 </div>
-                
+            
                 <div class="search-category-container">
-                    <select class="search-category" id="searchCategory">
+                    <select class="search-category" id="searchCategory" name="category">
                         <option value="" disabled selected>Select Search Category</option>
                         <option value="difficulty">Search by Difficulty Level</option>
                         <option value="time">Search by Cooking Time</option>
                         <option value="diet">Search by Dietary Preferences</option>
-                        <option value="occasion">Search by Occasion</option>
-                        <option value="season">Search by Season</option>
+                        <option value="meal_type">Search by Meal Type</option>
+                        <option value="main_ingredient">Search by Main Ingredient</option>
+                        <option value="spice_level">Search by Spice Level</option>
+                        <option value="cooking_method">Search by Cooking Method</option>
+                        <option value="health_focus">Search by Health Focus</option>
                     </select>
-                    
-                    <select class="search-options" id="searchOptions" disabled>
+            
+                    <select class="search-options" id="searchOptions" name="option" disabled>
                         <option value="" disabled selected>Select an Option</option>
                     </select>
                 </div>
-        
-                <input type="text" placeholder="Search Text..." class="search-input" id="searchInput" autocomplete="off" style="display: none;">
-                
-                <button class="search-button" id="searchButton" disabled>Search</button>
-                <button class="reset-button" id="resetButton">Reset</button>
-            </div>
-    
-            <div class="search-image"></div>
+            
+                <input type="text" placeholder="Search Text..." class="search-input" id="searchInput" name="text" autocomplete="off" style="display: none;">
+            
+                <button type="submit" class="search-button" id="searchButton" disabled>Search</button>
+                <button type="reset" class="reset-button" id="resetButton">Reset</button>
+            </form>
         </section>
     
         <section class="results-section">
-            <h2 class="results-title">Search Results</h2>
-            <div class="results-grid" id="resultsGrid">
-                <div class="result-card">
-                    <img src="https://placehold.co/300x150" alt="Recipe Image">
-                    <h3>Recipe Title</h3>
-                    <p>Some description of the recipe here.</p>
-                </div>
-    
-                <div class="result-card">
-                    <img src="https://placehold.co/300x150" alt="Recipe Image">
-                    <h3>Recipe Title</h3>
-                    <p>Some description of the recipe here.</p>
-                </div>
-    
-                <div class="result-card">
-                    <img src="https://placehold.co/300x150" alt="Recipe Image">
-                    <h3>Recipe Title</h3>
-                    <p>Some description of the recipe here.</p>
-                </div>
-            </div>
+            <h2 class="results-title" id="result-title">Search Results</h2>
+            <div class="results-grid" id="resultsGrid"></div>
         </section>
     </main>
     
@@ -136,5 +121,6 @@
     </div>
     
     <script src="scripts/script.js"></script>
+    <script src="scripts/search.js"></script>
 </body>
 </html>
