@@ -3,7 +3,11 @@
     {
       "title": "Litti Chokha",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Bihari",
       "prep_time_minutes": 20,
       "cook_time_minutes": 30,
@@ -34,7 +38,11 @@
     {
       "title": "Paneer Butter Masala",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Punjabi",
       "prep_time_minutes": 15,
       "cook_time_minutes": 25,
@@ -64,7 +72,11 @@
     {
       "title": "Vegetable Pulao",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Indian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
@@ -93,7 +105,11 @@
     {
       "title": "Poha",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Maharashtrian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 10,
@@ -123,7 +139,11 @@
     {
       "title": "Vegetable Sandwich",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Continental",
       "prep_time_minutes": 5,
       "cook_time_minutes": 5,
@@ -150,7 +170,11 @@
     {
       "title": "Dal Tadka",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "North Indian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
@@ -179,7 +203,11 @@
     {
       "title": "Palak Paneer",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "North Indian",
       "prep_time_minutes": 15,
       "cook_time_minutes": 20,
@@ -208,7 +236,11 @@
     {
       "title": "Fruit Salad",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Global",
       "prep_time_minutes": 10,
       "cook_time_minutes": 0,
@@ -235,7 +267,11 @@
     {
       "title": "Aloo Paratha",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "North Indian",
       "prep_time_minutes": 15,
       "cook_time_minutes": 20,
@@ -265,7 +301,11 @@
     {
       "title": "Chole Bhature",
       "description": "Some description of the recipe here.",
-      "image": "https://placehold.co/300x150",
+      "images": [
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150",
+        "https://placehold.co/300x150"
+      ],
       "cuisine": "Punjabi",
       "prep_time_minutes": 30,
       "cook_time_minutes": 40,

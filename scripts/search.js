@@ -125,7 +125,7 @@ form.addEventListener('submit', function (event) {
         filteredRecipes.forEach(recipe => {
             const resultCard = `
                 <div class="result-card">
-                    <img src="${recipe.image}" alt="${recipe.title}">
+                    <img src="${recipe.images[0]}" alt="${recipe.title}">
                     <h3>${recipe.title}</h3>
                     <p>${recipe.description}</p>
                 </div>
