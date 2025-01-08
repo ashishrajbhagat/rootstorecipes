@@ -19,6 +19,12 @@ h1, h2, h3, h4, h5, h6, p, a, select, button, input, label, ul, li {
     margin: 40px 30px;
 }
 
+@media (max-width: 768px) {
+    .main {
+        margin: 20px 15px;
+    }
+}
+
 .section-title {
     text-align: center;
     font-size: 2rem;
