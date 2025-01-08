@@ -236,6 +236,7 @@
 @media (max-width: 768px) {
     .recipe-of-the-day .recipe-day-content-wrapper {
         flex-direction: column;
+        gap: 30px;
     }
 
     .recipe-of-the-day .recipe-day-image-wrapper {
