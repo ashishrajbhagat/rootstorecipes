@@ -1,3 +1,4 @@
+/* Hero Image */
 .about-hero {
     background: url('https://placehold.co/1920x600') no-repeat center center/cover;
     position: relative;
@@ -19,6 +20,7 @@
 .about-hero h1 {
     color: #fff;
     font-size: 48px;
+    text-align: center;
 }
 
 .about-hero p {
@@ -27,16 +29,15 @@
     text-align: center;
 }
 
+/* About Section */
 .about-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    margin: 40px auto;
 }
 
 .about-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
 }
 
 .about-section img {
@@ -114,6 +115,7 @@
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 280px;
+    margin: 0 auto;
     padding: 30px;
     transition: transform 0.3s;
 }

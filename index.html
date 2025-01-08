@@ -30,7 +30,11 @@
     </header>
     <main class="main">
         <div class="hero-image">
-            <img src="images/chef-showing-menu.jpg" alt="Chef">
+            <img class="chef-desktop" src="images/chef-showing-menu.jpg" alt="Chef">
+            <div class="hero-text">
+                <h1>Discover Your Next Favorite Recipe</h1>
+                <p>Explore a world of flavors with recipes tailored to your taste and preferences. From hearty meals to quick snacks, we’ve got something for everyone!</p>
+            </div>
             <form class="search-container" method="GET" action="search.html">
                 <div class="radio-container">
                     <label>
@@ -92,415 +96,424 @@
                         <li><strong>Servings:</strong> 2</li>
                     </ul>
                     <a href="recipe-detail-page.html" class="btn-primary">View Recipe</a>
-                </div>
-                
+                </div>                
             </div>
         </section>
 
         <!-- Popular Recipes Section -->
         <section class="popular-recipes">
             <h2 class="section-title">Popular Recipes</h2>
-            <div class="carousel" id="popularCarousel">
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 1" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3 class="recipe-title">Spaghetti Carbonara</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left" data-carousel-id="popularCarousel">&#9664;</button>
+                <div class="carousel" id="popularCarousel">
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 1" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3 class="recipe-title">Spaghetti Carbonara</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 2" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3 class="recipe-title">Vegan Buddha Bowl</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 2" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3 class="recipe-title">Vegan Buddha Bowl</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 3" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3 class="recipe-title">Grilled Chicken Tacos</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 3" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3 class="recipe-title">Grilled Chicken Tacos</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 4" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3 class="recipe-title">Creamy Mushroom Soup</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 4" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3 class="recipe-title">Creamy Mushroom Soup</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 5" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3>Avocado Toast</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 5" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3>Avocado Toast</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 6" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3>Chicken Alfredo Pasta</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 6" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3>Chicken Alfredo Pasta</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recipe 7" class="recipe-image">
-                        <div class="carousel-content">
-                            <h3>Classic Tacos</h3>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Recipe 7" class="recipe-image">
+                            <div class="carousel-content">
+                                <h3>Classic Tacos</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <button class="carousel-btn right" data-carousel-id="popularCarousel">&#9654;</button>
             </div>
         </section>
 
         <!-- Healthy Recipes Section -->
         <section class="healthy-recipes">
             <h2 class="section-title">Healthy Recipes</h2>
-            <div class="carousel" id="healthCarousel">
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 1">
-                        <div class="carousel-content">
-                            <h3>Grilled Chicken Salad</h3>
-                            <p>Fresh veggies, grilled chicken, and a light dressing for a wholesome meal.</p>
+            <div class="carousel-container">
+                <button class="carousel-btn left" data-carousel-id="healthCarousel">&#9664;</button>
+                <div class="carousel" id="healthCarousel">
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 1">
+                            <div class="carousel-content">
+                                <h3>Grilled Chicken Salad</h3>
+                                <p>Fresh veggies, grilled chicken, and a light dressing for a wholesome meal.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 2">
-                        <div class="carousel-content">
-                            <h3>Quinoa Bowl</h3>
-                            <p>A balanced quinoa bowl with avocado, spinach, and almonds.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 2">
+                            <div class="carousel-content">
+                                <h3>Quinoa Bowl</h3>
+                                <p>A balanced quinoa bowl with avocado, spinach, and almonds.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 3">
-                        <div class="carousel-content">
-                            <h3>Vegan Buddha Bowl</h3>
-                            <p>Colorful veggies, chickpeas, and a tangy tahini sauce.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 3">
+                            <div class="carousel-content">
+                                <h3>Vegan Buddha Bowl</h3>
+                                <p>Colorful veggies, chickpeas, and a tangy tahini sauce.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 4">
-                        <div class="carousel-content">
-                            <h3>Fruit & Yogurt Parfait</h3>
-                            <p>Layers of fresh fruit, yogurt, and granola for a perfect breakfast.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 4">
+                            <div class="carousel-content">
+                                <h3>Fruit & Yogurt Parfait</h3>
+                                <p>Layers of fresh fruit, yogurt, and granola for a perfect breakfast.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 5">
-                        <div class="carousel-content">
-                            <h3>Roasted Veggie Wrap</h3>
-                            <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 5">
+                            <div class="carousel-content">
+                                <h3>Roasted Veggie Wrap</h3>
+                                <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 5">
-                        <div class="carousel-content">
-                            <h3>Roasted Veggie Wrap</h3>
-                            <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 5">
+                            <div class="carousel-content">
+                                <h3>Roasted Veggie Wrap</h3>
+                                <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy Recipe 5">
-                        <div class="carousel-content">
-                            <h3>Roasted Veggie Wrap</h3>
-                            <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Healthy Recipe 5">
+                            <div class="carousel-content">
+                                <h3>Roasted Veggie Wrap</h3>
+                                <p>A light wrap packed with roasted veggies and a zesty dressing.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <button class="carousel-btn right" data-carousel-id="healthCarousel">&#9654;</button>
             </div>
         </section>
 
         <!-- Statewise Recipes Section -->
         <section class="statewise-recipes-section">
             <h2 class="section-title">State-Wise Specialties</h2>
-            <div class="carousel" id="stateRecipeCarousel">
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Litti Chokha">
-                        <div class="carousel-content">
-                            <h3>Litti Chokha</h3>
-                            <p>A traditional dish from Bihar, made with wheat dough balls and served with mashed roasted vegetables.</p>
+            <div class="carousel-container">
+                <button class="carousel-btn left" data-carousel-id="stateRecipeCarousel">&#9664;</button>
+                <div class="carousel" id="stateRecipeCarousel">
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Litti Chokha">
+                            <div class="carousel-content">
+                                <h3>Litti Chokha</h3>
+                                <p>A traditional dish from Bihar, made with wheat dough balls and served with mashed roasted vegetables.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Dhokla">
-                        <div class="carousel-content">
-                            <h3>Dhokla</h3>
-                            <p>A popular snack from Gujarat, made from fermented rice and chickpea batter, steamed to perfection.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Dhokla">
+                            <div class="carousel-content">
+                                <h3>Dhokla</h3>
+                                <p>A popular snack from Gujarat, made from fermented rice and chickpea batter, steamed to perfection.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Poha">
-                        <div class="carousel-content">
-                            <h3>Poha</h3>
-                            <p>Maharashtra's favorite breakfast, made with flattened rice and spices for a light, healthy meal.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Poha">
+                            <div class="carousel-content">
+                                <h3>Poha</h3>
+                                <p>Maharashtra's favorite breakfast, made with flattened rice and spices for a light, healthy meal.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Masor Tenga">
-                        <div class="carousel-content">
-                            <h3>Masor Tenga</h3>
-                            <p>A tangy fish curry from Assam, known for its light and sour taste, made with tomatoes and lemon.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Masor Tenga">
+                            <div class="carousel-content">
+                                <h3>Masor Tenga</h3>
+                                <p>A tangy fish curry from Assam, known for its light and sour taste, made with tomatoes and lemon.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Rogan Josh">
-                        <div class="carousel-content">
-                            <h3>Rogan Josh</h3>
-                            <p>A flavorful curry from Kashmir, made with tender pieces of lamb simmered in spices and yogurt.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Rogan Josh">
+                            <div class="carousel-content">
+                                <h3>Rogan Josh</h3>
+                                <p>A flavorful curry from Kashmir, made with tender pieces of lamb simmered in spices and yogurt.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Appam">
-                        <div class="carousel-content">
-                            <h3>Appam</h3>
-                            <p>A soft and fluffy pancake from Kerala, often served with coconut stew or curry.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Appam">
+                            <div class="carousel-content">
+                                <h3>Appam</h3>
+                                <p>A soft and fluffy pancake from Kerala, often served with coconut stew or curry.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Rasgulla">
-                        <div class="carousel-content">
-                            <h3>Rasgulla</h3>
-                            <p>West Bengal's famous sweet, made from chenna and soaked in light sugar syrup.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Rasgulla">
+                            <div class="carousel-content">
+                                <h3>Rasgulla</h3>
+                                <p>West Bengal's famous sweet, made from chenna and soaked in light sugar syrup.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Sarson da Saag">
-                        <div class="carousel-content">
-                            <h3>Sarson da Saag</h3>
-                            <p>A winter specialty from Punjab, made from mustard greens, best enjoyed with makki di roti.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Sarson da Saag">
+                            <div class="carousel-content">
+                                <h3>Sarson da Saag</h3>
+                                <p>A winter specialty from Punjab, made from mustard greens, best enjoyed with makki di roti.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Baati">
-                        <div class="carousel-content">
-                            <h3>Baati</h3>
-                            <p>A traditional dish from Rajasthan, consisting of hard wheat rolls served with dal and ghee.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Baati">
+                            <div class="carousel-content">
+                                <h3>Baati</h3>
+                                <p>A traditional dish from Rajasthan, consisting of hard wheat rolls served with dal and ghee.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://t4.ftcdn.net/jpg/02/15/84/67/240_F_215846776_gTzPED4wtRmUzmFIOvwRzbKCEeQMW572.jpg" alt="Hyderabadi Biryani">
-                        <div class="carousel-content">
-                            <h3>Hyderabadi Biryani</h3>
-                            <p>The iconic rice dish from Hyderabad, made with basmati rice, meat, and a rich blend of spices.</p>
+                    </a>
+                    <a href="#" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Hyderabadi Biryani">
+                            <div class="carousel-content">
+                                <h3>Hyderabadi Biryani</h3>
+                                <p>The iconic rice dish from Hyderabad, made with basmati rice, meat, and a rich blend of spices.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <button class="carousel-btn right" data-carousel-id="stateRecipeCarousel">&#9654;</button>
             </div>
         </section>
 
         <!-- Blog / Tips & Tricks -->
         <section class="blog-carousel">
             <h2 class="section-title">Blog / Tips & Tricks</h2>
-            <div class="carousel" id="blogCarousel">
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 1">
-                        <div class="carousel-content">
-                            <h3>How to Make the Perfect Pasta</h3>
-                            <p>Learn the secret techniques for creating delicious pasta dishes.</p>
-                            <a href="#" class="read-more">Read More</a>
+            <div class="carousel-container">
+                <button class="carousel-btn left" data-carousel-id="blogCarousel">&#9664;</button>
+                <div class="carousel" id="blogCarousel">
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 1">
+                            <div class="carousel-content">
+                                <h3>How to Make the Perfect Pasta</h3>
+                                <p>Learn the secret techniques for creating delicious pasta dishes.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 2">
-                        <div class="carousel-content">
-                            <h3>5 Easy Breakfast Ideas</h3>
-                            <p>Quick and nutritious breakfast ideas for your busy mornings.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 2">
+                            <div class="carousel-content">
+                                <h3>5 Easy Breakfast Ideas</h3>
+                                <p>Quick and nutritious breakfast ideas for your busy mornings.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 3">
-                        <div class="carousel-content">
-                            <h3>Meal Prep Like a Pro</h3>
-                            <p>Save time during the week with our meal prep tips and tricks.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 3">
+                            <div class="carousel-content">
+                                <h3>Meal Prep Like a Pro</h3>
+                                <p>Save time during the week with our meal prep tips and tricks.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Tip 2" class="blog-img">
-                        <div class="carousel-content">
-                            <h3>10 Healthy Meal Prep Ideas</h3>
-                            <p>Discover healthy meal prep ideas that will save you time and keep you on track.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Tip 2" class="blog-img">
+                            <div class="carousel-content">
+                                <h3>10 Healthy Meal Prep Ideas</h3>
+                                <p>Discover healthy meal prep ideas that will save you time and keep you on track.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Tip 3" class="blog-img">
-                        <div class="carousel-content">
-                            <h3>Essential Kitchen Tools for Every Home Cook</h3>
-                            <p>Check out our list of essential kitchen tools that every home cook should have.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Tip 3" class="blog-img">
+                            <div class="carousel-content">
+                                <h3>Essential Kitchen Tools for Every Home Cook</h3>
+                                <p>Check out our list of essential kitchen tools that every home cook should have.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Tip 4" class="blog-img">
-                        <div class="carousel-content">
-                            <h3>Cooking Hacks: Save Time in the Kitchen</h3>
-                            <p>Learn simple cooking hacks that will save you time and effort in the kitchen.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Tip 4" class="blog-img">
+                            <div class="carousel-content">
+                                <h3>Cooking Hacks: Save Time in the Kitchen</h3>
+                                <p>Learn simple cooking hacks that will save you time and effort in the kitchen.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 1">
-                        <div class="carousel-content">
-                            <h3>How to Make the Perfect Pasta</h3>
-                            <p>Learn the secret techniques for creating delicious pasta dishes.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 1">
+                            <div class="carousel-content">
+                                <h3>How to Make the Perfect Pasta</h3>
+                                <p>Learn the secret techniques for creating delicious pasta dishes.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 2">
-                        <div class="carousel-content">
-                            <h3>5 Easy Breakfast Ideas</h3>
-                            <p>Quick and nutritious breakfast ideas for your busy mornings.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 2">
+                            <div class="carousel-content">
+                                <h3>5 Easy Breakfast Ideas</h3>
+                                <p>Quick and nutritious breakfast ideas for your busy mornings.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Blog 3">
-                        <div class="carousel-content">
-                            <h3>Meal Prep Like a Pro</h3>
-                            <p>Save time during the week with our meal prep tips and tricks.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Blog 3">
+                            <div class="carousel-content">
+                                <h3>Meal Prep Like a Pro</h3>
+                                <p>Save time during the week with our meal prep tips and tricks.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="recipe-details.html" class="carousel-link">
-                    <div class="carousel-card">
-                        <img src="https://img.freepik.com/free-psd/chef-home-square-flyer-design_23-2148608558.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="Tip 2" class="blog-img">
-                        <div class="carousel-content">
-                            <h3>10 Healthy Meal Prep Ideas</h3>
-                            <p>Discover healthy meal prep ideas that will save you time and keep you on track.</p>
-                            <a href="#" class="read-more">Read More</a>
+                    </a>
+                    <a href="recipe-details.html" class="carousel-link">
+                        <div class="carousel-card">
+                            <img src="https://placehold.co/250x150" alt="Tip 2" class="blog-img">
+                            <div class="carousel-content">
+                                <h3>10 Healthy Meal Prep Ideas</h3>
+                                <p>Discover healthy meal prep ideas that will save you time and keep you on track.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <button class="carousel-btn right" data-carousel-id="blogCarousel">&#9654;</button>
             </div>
         </section>
 
         <!-- Testimonial Section -->
         <section class="testimonials">
             <h2 class="section-title">Testimonials</h2>
-            <div class="carousel" id="testimonialCarousel">
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">John Doe</h3>
-                        <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
+            <div class="carousel-container">
+                <button class="carousel-btn left" data-carousel-id="testimonialCarousel">&#9664;</button>
+                <div class="carousel" id="testimonialCarousel">
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">John Doe</h3>
+                            <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Jane Smith</h3>
+                            <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Alice Johnson</h3>
+                            <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">John Doe</h3>
+                            <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Jane Smith</h3>
+                            <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Alice Johnson</h3>
+                            <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">John Doe</h3>
+                            <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Jane Smith</h3>
+                            <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
+                        <div class="carousel-content">
+                            <h3 class="user-name">Alice Johnson</h3>
+                            <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Jane Smith</h3>
-                        <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Alice Johnson</h3>
-                        <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">John Doe</h3>
-                        <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Jane Smith</h3>
-                        <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Alice Johnson</h3>
-                        <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 1" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">John Doe</h3>
-                        <p class="review">"This is by far the best recipe website I've ever used! The recipes are easy to follow, and the results are always amazing!"</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/cheerful-cartoon-boy-with-happy-face_1308-161780.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 2" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Jane Smith</h3>
-                        <p class="review">"I love how I can find recipes based on ingredients I already have at home. It's super convenient and the meals are always delicious!"</p>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <img src="https://img.freepik.com/free-vector/smiling-cartoon-mans-face_1308-174269.jpg?size=626&ext=jpg&ga=GA1.1.1407804456.1729091800&semt=ais_hybrid" alt="User 3" class="testimonial-img">
-                    <div class="carousel-content">
-                        <h3 class="user-name">Alice Johnson</h3>
-                        <p class="review">"The vegan recipes on this site are incredible! My go-to site whenever I need new ideas."</p>
-                    </div>
-                </div>
+                <button class="carousel-btn right" data-carousel-id="testimonialCarousel">&#9654;</button>
             </div>
         </section>
 
