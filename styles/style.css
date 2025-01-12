@@ -58,21 +58,6 @@ h1, h2, h3, h4, h5, h6, p, a, select, button, input, label, ul, li {
     background-color: #333;
 }
 
-@media (max-width: 768px) {
-    .about-section, .values-section, .team-section .team-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about-hero h1 {
-        font-size: 36px;
-    }
-
-    .team-section .team-member {
-        width: 100%;
-    }
-}
-
 /* ------------------------ HEADER ---------------------------------------- */
 
 header {

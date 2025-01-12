@@ -33,7 +33,10 @@
         "Stuff the dough balls, seal them, and bake or roast.",
         "Prepare chokha by mashing roasted vegetables with mustard oil and spices.",
         "Serve litti with chokha."
-      ]
+      ],
+      "spice_level": "Medium",
+      "cooking_method": "Roasted,Baked",
+      "health_focus": "High-fiber"
     },
     {
       "title": "Paneer Butter Masala",
@@ -47,7 +50,7 @@
       "prep_time_minutes": 15,
       "cook_time_minutes": 25,
       "servings": 4,
-      "meal_type": "Lunch/Dinner",
+      "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
       "time": "40 minutes",
       "diet": "Vegetarian",
@@ -67,7 +70,10 @@
         "Add cashew paste and cook.",
         "Add paneer, spices, and cream. Simmer briefly.",
         "Serve hot with naan or rice."
-      ]
+      ],
+      "spice_level": "Medium",
+      "cooking_method": "Sautéed",
+      "health_focus": "Comfort food"
     },
     {
       "title": "Vegetable Pulao",
@@ -81,7 +87,7 @@
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
       "servings": 4,
-      "meal_type": "Lunch/Dinner",
+      "meal_type": "Lunch,Dinner",
       "difficulty": "Easy",
       "time": "30 minutes",
       "diet": "Vegetarian",
@@ -100,7 +106,10 @@
         "Soak rice, sauté spices and vegetables.",
         "Add rice, water, and cook until tender.",
         "Serve hot, garnished with coriander."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "Sautéed",
+      "health_focus": "Low-calorie"
     },
     {
       "title": "Poha",
@@ -134,7 +143,10 @@
         "Sauté mustard seeds, curry leaves, and peanuts in oil.",
         "Add onions, chilies, turmeric, and poha. Cook for 5 minutes.",
         "Serve hot garnished with coriander and lemon juice."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "Sautéed",
+      "health_focus": "Healthy"
     },
     {
       "title": "Vegetable Sandwich",
@@ -148,7 +160,7 @@
       "prep_time_minutes": 5,
       "cook_time_minutes": 5,
       "servings": 2,
-      "meal_type": "Breakfast/Brunch",
+      "meal_type": "Breakfast,Brunch",
       "difficulty": "Easy",
       "time": "10 minutes",
       "diet": "Vegetarian",
@@ -165,7 +177,10 @@
         "Butter the bread slices.",
         "Layer cucumber, tomato, and cheese between slices.",
         "Grill if desired and serve."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "Grilled",
+      "health_focus": "Low-calorie"
     },
     {
       "title": "Dal Tadka",
@@ -179,7 +194,7 @@
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
       "servings": 4,
-      "meal_type": "Lunch/Dinner",
+      "meal_type": "Lunch,Dinner",
       "difficulty": "Easy",
       "time": "30 minutes",
       "diet": "Vegetarian",
@@ -198,7 +213,10 @@
         "Cook toor dal in a pressure cooker.",
         "Prepare a tempering with cumin, garlic, onions, and tomatoes.",
         "Mix the tempering with dal and serve hot with rice or roti."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "Boiled,Sautéed",
+      "health_focus": "High-fiber"
     },
     {
       "title": "Palak Paneer",
@@ -212,7 +230,7 @@
       "prep_time_minutes": 15,
       "cook_time_minutes": 20,
       "servings": 4,
-      "meal_type": "Lunch/Dinner",
+      "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
       "time": "35 minutes",
       "diet": "Vegetarian",
@@ -231,7 +249,10 @@
         "Sauté garlic, onions, and tomatoes.",
         "Add spinach puree, paneer, and cream. Simmer briefly.",
         "Serve hot with roti or naan."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "Sautéed",
+      "health_focus": "Healthy"
     },
     {
       "title": "Fruit Salad",
@@ -245,7 +266,7 @@
       "prep_time_minutes": 10,
       "cook_time_minutes": 0,
       "servings": 4,
-      "meal_type": "Brunch/Dessert",
+      "meal_type": "Brunch,Dessert",
       "difficulty": "Easy",
       "time": "10 minutes",
       "diet": "Vegetarian",
@@ -262,7 +283,10 @@
         "Mix all the fruits in a bowl.",
         "Drizzle honey on top and toss gently.",
         "Serve chilled."
-      ]
+      ],
+      "spice_level": "Mild",
+      "cooking_method": "None",
+      "health_focus": "Low-calorie"
     },
     {
       "title": "Aloo Paratha",
@@ -295,8 +319,11 @@
         "Make dough using wheat flour and water.",
         "Prepare filling with mashed potatoes, spices, and herbs.",
         "Stuff dough with filling, roll out, and cook on a hot griddle.",
-        "Serve hot with yogurt and pickle."
-      ]
+        "Serve with yogurt and pickle."
+      ],
+      "spice_level": "Medium",
+      "cooking_method": "Grilled",
+      "health_focus": "High-fiber"
     },
     {
       "title": "Chole Bhature",
@@ -310,7 +337,7 @@
       "prep_time_minutes": 30,
       "cook_time_minutes": 40,
       "servings": 4,
-      "meal_type": "Lunch/Dinner",
+      "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
       "time": "70 minutes",
       "diet": "Vegetarian",
@@ -329,7 +356,10 @@
         "Cook chickpeas with spices.",
         "Prepare bhature dough and let it rise.",
         "Roll out dough, fry, and serve hot with chole."
-      ]
-    }
+      ],
+      "spice_level": "Medium",
+      "cooking_method": "Fried",
+      "health_focus": "Comfort food"
+    }    
   ]
 }

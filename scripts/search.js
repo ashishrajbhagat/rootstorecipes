@@ -53,6 +53,7 @@ searchCategory.addEventListener('change', function () {
     searchOptions.innerHTML = '<option value="" disabled selected>Select an Option</option>';
     searchInput.value = "";
     searchButton.disabled = true;
+    searchButton.style.cursor = 'not-allowed';
 
     const category = this.value;
 
@@ -64,8 +65,8 @@ searchCategory.addEventListener('change', function () {
     } else if (category === 'diet') {
         options = ['Vegan', 'Vegetarian', 'Non-Vegetarian'];
     } else if (category === 'meal_type') {
-        options = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Party'];
-    } else if (category === 'main_ingredient') {
+        options = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Party', 'Dessert', 'Snacks', 'Appetizer'];
+    } else if (category === 'ingredients') {
         options = ['Paneer', 'Rice', 'Lentils', 'Vegetables', 'Fruits', 'Nuts'];
     } else if (category === 'spice_level') {
         options = ['Mild', 'Medium', 'Spicy'];
@@ -112,9 +113,45 @@ form.addEventListener('submit', function (event) {
                 recipe.description.toLowerCase().includes(text.toLowerCase())
             );
         } else if (category && option) {
-            filteredRecipes = recipes.filter(recipe =>
-                recipe[category] && recipe[category].toLowerCase() === option
-            );
+            filteredRecipes = recipes.filter(recipe => {
+                // recipe[category] && recipe[category].toLowerCase().includes(option.toLowerCase())
+
+                if (!recipe[category]) {
+                    return false; // Skip if the category doesn't exist in the recipe
+                }
+
+                if (category === 'time') {
+                    // Extract the numeric value of time from the JSON
+                    const timeInMinutes = parseInt(recipe.time.split(' ')[0], 10);                    
+        
+                    // Match based on the dropdown option
+                    switch (option) {
+                        case 'under_15_minutes':
+                            return timeInMinutes < 15;
+                        case '15-30_minutes':
+                            return timeInMinutes >= 15 && timeInMinutes <= 30;
+                        case '30-60_minutes':
+                            return timeInMinutes > 30 && timeInMinutes <= 60;
+                        case 'over_1_hour':
+                            return timeInMinutes > 60;
+                        default:
+                            return false;
+                    }
+                }
+        
+                // Handle special cases for filtering
+                switch (category) {
+                    case 'ingredients':
+                        // Check if any ingredient matches the option
+                        return recipe.ingredients.some(ingredient => 
+                            ingredient.name.toLowerCase().includes(option.toLowerCase())
+                        );
+        
+                    default:
+                        // Default case: check if the value includes the option
+                        return recipe[category].toLowerCase().includes(option.toLowerCase());
+                }
+            });
         }
     }
 
