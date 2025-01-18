@@ -88,9 +88,10 @@ function populateRecipesSections() {
     // recipeContainer.appendChild(createRecipeSection("Recipes by Series", groupedBySeries));
 }
 
-
 // Pagination settings
-const pageSize = 8; // Recipes per page
+const isMobile = window.innerWidth <= 500; // Check if it's a mobile view
+let pageSize = 8; // Recipes per page
+if (isMobile) pageSize = 4;
 let currentPage = 1;
 
 function populateAllRecipes() {
@@ -111,8 +112,10 @@ function renderRecipes() {
     recipesToDisplay.forEach(recipe => {
         const recipeCard = `
         <div class="recipe-card">
-            <img src="${recipe.images[0]}" alt="${recipe.title}">
-            <h3>${recipe.title}</h3>
+            <a href="recipe-details.html?title=${recipe.title}">
+                <img src="${recipe.images[0]}" alt="${recipe.title}">
+                <h3>${recipe.title}</h3>
+            </a>
         </div>
         `;
         recipeGrid.innerHTML += recipeCard;
@@ -123,7 +126,6 @@ function renderRecipes() {
 function renderPagination() {
     const paginationContainer = document.querySelector(".pagination");
     const totalPages = Math.ceil(recipes.length / pageSize);
-    const isMobile = window.innerWidth <= 500; // Check if it's a mobile view
     const maxVisiblePages = isMobile ? 3 : 5; // Show fewer pages in mobile view
     const pages = [];
   

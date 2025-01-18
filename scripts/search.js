@@ -74,6 +74,8 @@ searchCategory.addEventListener('change', function () {
         options = ['Grilled', 'Roasted', 'Fried', 'Boiled', 'Sautéed', 'Baked'];
     } else if (category === 'health_focus') {
         options = ['Protein-rich', 'Low-calorie', 'High-fiber', 'Comfort food', 'Healthy'];
+    } else if (category === 'cuisine') {
+        options = ['Bihari', 'Continental', 'Punjabi', 'Maharahtrian', 'North-Indian', 'Indian', 'Global'];
     }
 
     options.forEach(function (option) {
@@ -161,11 +163,11 @@ form.addEventListener('submit', function (event) {
         document.getElementById('result-title').style.display = 'block';
         filteredRecipes.forEach(recipe => {
             const resultCard = `
-                <div class="result-card">
+                <a class="result-card" href="recipe-details.html?title=${recipe.title}">
                     <img src="${recipe.images[0]}" alt="${recipe.title}">
                     <h3>${recipe.title}</h3>
                     <p>${recipe.description}</p>
-                </div>
+                </a>
             `;
             resultsGrid.insertAdjacentHTML('beforeend', resultCard);
         });

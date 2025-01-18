@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', 'Verdana', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, select, button, input, label, ul, li {
+h1, h2, h3, h4, h5, h6, p, span, a, select, button, input, label, ul, li {
     font-family: 'Josefin Sans', 'Trebuchet MS', sans-serif;
 }
 

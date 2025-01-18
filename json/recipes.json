@@ -2,7 +2,7 @@
   "recipes": [
     {
       "title": "Litti Chokha",
-      "description": "Some description of the recipe here.",
+      "description": "A traditional dish from Bihar, made with wheat dough balls and served with mashed roasted vegetables.",
       "images": [
         "https://placehold.co/300x150",
         "https://placehold.co/300x150",
@@ -11,12 +11,11 @@
       "cuisine": "Bihari",
       "prep_time_minutes": 20,
       "cook_time_minutes": 30,
+      "total_time_minutes": 50,
       "servings": 4,
       "meal_type": "Dinner",
       "difficulty": "Intermediate",
-      "time": "60 minutes",
       "diet": "Vegetarian",
-      "occasion": "Dinner",
       "season": "Autumn",
       "ingredients": [
         {"name": "Wheat flour", "quantity": "2 cups"},
@@ -27,7 +26,7 @@
         {"name": "Salt", "quantity": "to taste"},
         {"name": "Lemon juice", "quantity": "2 tablespoons"}
       ],
-      "instructions": [
+      "steps": [
         "Make dough with wheat flour and water.",
         "Prepare stuffing with sattu, mustard oil, and spices.",
         "Stuff the dough balls, seal them, and bake or roast.",
@@ -49,12 +48,11 @@
       "cuisine": "Punjabi",
       "prep_time_minutes": 15,
       "cook_time_minutes": 25,
+      "total_time_minutes": 40,
       "servings": 4,
       "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
-      "time": "40 minutes",
       "diet": "Vegetarian",
-      "occasion": "Dinner",
       "season": "Winter",
       "ingredients": [
         {"name": "Paneer", "quantity": "250 grams"},
@@ -65,7 +63,7 @@
         {"name": "Garam masala", "quantity": "1 teaspoon"},
         {"name": "Salt", "quantity": "to taste"}
       ],
-      "instructions": [
+      "steps": [
         "Heat butter, sauté tomato puree until oil separates.",
         "Add cashew paste and cook.",
         "Add paneer, spices, and cream. Simmer briefly.",
@@ -73,7 +71,8 @@
       ],
       "spice_level": "Medium",
       "cooking_method": "Sautéed",
-      "health_focus": "Comfort food"
+      "health_focus": "Comfort food",
+      "note": "For a vegan option, replace paneer with tofu and cream with coconut milk."
     },
     {
       "title": "Vegetable Pulao",
@@ -86,12 +85,11 @@
       "cuisine": "Indian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
+      "total_time_minutes": 30,
       "servings": 4,
       "meal_type": "Lunch,Dinner",
       "difficulty": "Easy",
-      "time": "30 minutes",
       "diet": "Vegetarian",
-      "occasion": "Lunch",
       "season": "Summer",
       "ingredients": [
         {"name": "Basmati rice", "quantity": "2 cups"},
@@ -102,7 +100,7 @@
         {"name": "Salt", "quantity": "to taste"},
         {"name": "Water", "quantity": "4 cups"}
       ],
-      "instructions": [
+      "steps": [
         "Soak rice, sauté spices and vegetables.",
         "Add rice, water, and cook until tender.",
         "Serve hot, garnished with coriander."
@@ -113,7 +111,7 @@
     },
     {
       "title": "Poha",
-      "description": "Some description of the recipe here.",
+      "description": "Maharashtra's favorite breakfast, made with flattened rice and spices for a light, healthy meal.",
       "images": [
         "https://placehold.co/300x150",
         "https://placehold.co/300x150",
@@ -122,12 +120,11 @@
       "cuisine": "Maharashtrian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 10,
+      "total_time_minutes": 20,
       "servings": 4,
       "meal_type": "Breakfast",
       "difficulty": "Easy",
-      "time": "20 minutes",
       "diet": "Vegetarian",
-      "occasion": "Breakfast",
       "season": "Winter",
       "ingredients": [
         {"name": "Flattened rice (poha)", "quantity": "2 cups"},
@@ -138,7 +135,7 @@
         {"name": "Turmeric powder", "quantity": "1/2 teaspoon"},
         {"name": "Curry leaves", "quantity": "6-8"}
       ],
-      "instructions": [
+      "steps": [
         "Wash and drain poha.",
         "Sauté mustard seeds, curry leaves, and peanuts in oil.",
         "Add onions, chilies, turmeric, and poha. Cook for 5 minutes.",
@@ -159,12 +156,11 @@
       "cuisine": "Continental",
       "prep_time_minutes": 5,
       "cook_time_minutes": 5,
+      "total_time_minutes": 10,
       "servings": 2,
-      "meal_type": "Breakfast,Brunch",
+      "meal_type": "Breakfast",
       "difficulty": "Easy",
-      "time": "10 minutes",
       "diet": "Vegetarian",
-      "occasion": "Breakfast",
       "season": "Summer",
       "ingredients": [
         {"name": "Bread slices", "quantity": "4"},
@@ -173,7 +169,7 @@
         {"name": "Tomato", "quantity": "1, sliced"},
         {"name": "Cheese slices", "quantity": "2"}
       ],
-      "instructions": [
+      "steps": [
         "Butter the bread slices.",
         "Layer cucumber, tomato, and cheese between slices.",
         "Grill if desired and serve."
@@ -190,15 +186,14 @@
         "https://placehold.co/300x150",
         "https://placehold.co/300x150"
       ],
-      "cuisine": "North Indian",
+      "cuisine": "North-Indian",
       "prep_time_minutes": 10,
       "cook_time_minutes": 20,
+      "total_time_minutes": 30,
       "servings": 4,
       "meal_type": "Lunch,Dinner",
       "difficulty": "Easy",
-      "time": "30 minutes",
       "diet": "Vegetarian",
-      "occasion": "Lunch",
       "season": "Winter",
       "ingredients": [
         {"name": "Toor dal (pigeon peas)", "quantity": "1 cup"},
@@ -209,7 +204,7 @@
         {"name": "Turmeric powder", "quantity": "1/2 teaspoon"},
         {"name": "Salt", "quantity": "to taste"}
       ],
-      "instructions": [
+      "steps": [
         "Cook toor dal in a pressure cooker.",
         "Prepare a tempering with cumin, garlic, onions, and tomatoes.",
         "Mix the tempering with dal and serve hot with rice or roti."
@@ -226,15 +221,14 @@
         "https://placehold.co/300x150",
         "https://placehold.co/300x150"
       ],
-      "cuisine": "North Indian",
+      "cuisine": "North-Indian",
       "prep_time_minutes": 15,
       "cook_time_minutes": 20,
+      "total_time_minutes": 35,
       "servings": 4,
       "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
-      "time": "35 minutes",
       "diet": "Vegetarian",
-      "occasion": "Dinner",
       "season": "Winter",
       "ingredients": [
         {"name": "Spinach", "quantity": "250 grams, blanched"},
@@ -244,7 +238,7 @@
         {"name": "Tomatoes", "quantity": "2, pureed"},
         {"name": "Cream", "quantity": "2 tablespoons"}
       ],
-      "instructions": [
+      "steps": [
         "Blend blanched spinach into a puree.",
         "Sauté garlic, onions, and tomatoes.",
         "Add spinach puree, paneer, and cream. Simmer briefly.",
@@ -265,12 +259,11 @@
       "cuisine": "Global",
       "prep_time_minutes": 10,
       "cook_time_minutes": 0,
+      "total_time_minutes": 10,
       "servings": 4,
       "meal_type": "Brunch,Dessert",
       "difficulty": "Easy",
-      "time": "10 minutes",
       "diet": "Vegetarian",
-      "occasion": "Dessert",
       "season": "Summer",
       "ingredients": [
         {"name": "Apples", "quantity": "2, diced"},
@@ -279,13 +272,12 @@
         {"name": "Oranges", "quantity": "2, peeled and segmented"},
         {"name": "Honey", "quantity": "2 tablespoons"}
       ],
-      "instructions": [
+      "steps": [
         "Mix all the fruits in a bowl.",
         "Drizzle honey on top and toss gently.",
         "Serve chilled."
       ],
       "spice_level": "Mild",
-      "cooking_method": "None",
       "health_focus": "Low-calorie"
     },
     {
@@ -296,15 +288,14 @@
         "https://placehold.co/300x150",
         "https://placehold.co/300x150"
       ],
-      "cuisine": "North Indian",
+      "cuisine": "North-Indian",
       "prep_time_minutes": 15,
       "cook_time_minutes": 20,
+      "total_time_minutes": 35,
       "servings": 4,
       "meal_type": "Breakfast",
       "difficulty": "Intermediate",
-      "time": "35 minutes",
       "diet": "Vegetarian",
-      "occasion": "Breakfast",
       "season": "Winter",
       "ingredients": [
         {"name": "Whole wheat flour", "quantity": "2 cups"},
@@ -315,7 +306,7 @@
         {"name": "Coriander leaves", "quantity": "2 tablespoons, chopped"},
         {"name": "Salt", "quantity": "to taste"}
       ],
-      "instructions": [
+      "steps": [
         "Make dough using wheat flour and water.",
         "Prepare filling with mashed potatoes, spices, and herbs.",
         "Stuff dough with filling, roll out, and cook on a hot griddle.",
@@ -336,12 +327,11 @@
       "cuisine": "Punjabi",
       "prep_time_minutes": 30,
       "cook_time_minutes": 40,
+      "total_time_minutes": 70,
       "servings": 4,
       "meal_type": "Lunch,Dinner",
       "difficulty": "Intermediate",
-      "time": "70 minutes",
       "diet": "Vegetarian",
-      "occasion": "Lunch",
       "season": "Monsoon",
       "ingredients": [
         {"name": "Chickpeas", "quantity": "1 cup, soaked overnight"},
@@ -352,7 +342,7 @@
         {"name": "Flour (for bhature)", "quantity": "2 cups"},
         {"name": "Yogurt", "quantity": "1/2 cup"}
       ],
-      "instructions": [
+      "steps": [
         "Cook chickpeas with spices.",
         "Prepare bhature dough and let it rise.",
         "Roll out dough, fry, and serve hot with chole."

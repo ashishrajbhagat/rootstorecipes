@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Root to Recipe</title>
+    <title>Recipe Details | Root to Recipe</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/recipe-details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,72 +21,41 @@
         <nav class="navbar" id="navbar">
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="search.html">Search</a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
         </nav>
     </header>
-
     <main class="main">
-        <section class="about-hero">
-            <div class="overlay">
-                <div>
-                    <h1>About Us</h1>
-                    <p>Discover the Story Behind Our Passion for Cooking</p>
+        <section class="recipe-found">
+            <!-- Basic Information -->
+            <section class="recipe-details-hero">
+                <div class="hero-images">
+                    <div class="carousel-images" id="carousel-images"></div>
+                    <div class="carousel-buttons" id="carousel-buttons"></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="about-container">
-            <section class="about-section">
-                <div class="about-text">
-                    <h2>Our Journey</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="hero-content">
+                    <h1 id="recipe-title"></h1>
+                    <p id="recipe-description"></p>
+                    <div class="recipe-overview" id="recipe-overview"></div>
                 </div>
-                <img src="https://placehold.co/600x400" alt="Cooking Image">
-            </section>
-
-            <section class="values-section">
-                <div class="value-box">
-                    <i class="fas fa-seedling"></i>
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="value-box">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Our Mission</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="value-box">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Why Choose Us?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-
-            <section class="team-section">
-                <h2 class="section-title">Meet Our Team</h2>
-                <div class="team-container">
-                    <div class="team-member">
-                        <img src="https://placehold.co/150x150" alt="John Smith">
-                        <h4>John Smith</h4>
-                        <!-- <p>Founder & Head Chef</p> -->
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placehold.co/150x150" alt="Jane Doe">
-                        <h4>Jane Doe</h4>
-                        <!-- <p>Recipe Developer</p> -->
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                </div>
+            </section>           
+    
+            <section class="recipe-content">
+                <h2 class="section-title">Ingredients & Quantities</h2>
+                <ul class="ingredients" id="recipe-ingredients"></ul>
+    
+                <h2 class="section-title">Preparation Steps</h2>
+                <ol class="steps" id="recipe-steps"></ol>
+    
+                <div class="note" id="recipe-note"></div>
             </section>
         </section>
+
+        <section class="no-recipe-found"></section>
     </main>
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section about">
@@ -130,5 +99,6 @@
     </div>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/recipe-details.js"></script>
 </body>
 </html>

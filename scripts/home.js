@@ -60,7 +60,7 @@ searchCategory.addEventListener('change', function () {
         options = ['Vegan', 'Vegetarian', 'Non-Vegetarian'];
     } else if (category === 'meal_type') {
         options = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Party'];
-    } else if (category === 'main_ingredient') {
+    } else if (category === 'ingredients') {
         options = ['Paneer', 'Rice', 'Lentils', 'Vegetables', 'Fruits', 'Nuts'];
     } else if (category === 'spice_level') {
         options = ['Mild', 'Medium', 'Spicy'];
@@ -68,6 +68,8 @@ searchCategory.addEventListener('change', function () {
         options = ['Grilled', 'Roasted', 'Fried', 'Boiled', 'Sautéed', 'Baked'];
     } else if (category === 'health_focus') {
         options = ['Protein-rich', 'Low-calorie', 'High-fiber', 'Comfort food', 'Healthy'];
+    } else if (category === 'cuisine') {
+        options = ['Bihari', 'Continental', 'Punjabi', 'Maharahtrian', 'North Indian', 'Indian', 'Global'];
     }
 
     options.forEach(function (option) {
@@ -185,15 +187,17 @@ function updateRecipeSection(recipe) {
     largeImage.alt = recipe.title;
 
     // Update small images (use additional images if available, otherwise fallback)
-    smallImages[0].src = recipe.images[1] || recipe.images[0];
-    smallImages[1].src = recipe.images[2] || recipe.images[0];
+    smallImages[0].src = recipe.images[1];
+    smallImages[0].alt = recipe.title + " Image 1";
+    smallImages[1].src = recipe.images[2];
+    smallImages[1].alt = recipe.title + " Image 2";
 
     title.textContent = recipe.title;
     description.textContent = recipe.description;
     prepTime.innerHTML = `<strong>Prep Time:</strong> ${recipe.prep_time_minutes}`;
     cookTime.innerHTML = `<strong>Cook Time:</strong> ${recipe.cook_time_minutes}`;
-    servings.innerHTML = `<strong>Servings:</strong> ${recipe.servings}`;
-    viewRecipeButton.href = recipe.detailPageUrl || '#';
+    servings.innerHTML = `<strong>Diet:</strong> ${recipe.diet}`;
+    viewRecipeButton.href = `recipe-details.html?title=${recipe.title}`;
 }
 
 // Initialize the Recipe of the Day on page load
